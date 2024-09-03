@@ -1,0 +1,39 @@
+.input-with-button-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input-with-button-label {
+    color: #707070;
+    font-size: 16px;
+    margin-left: 7px ;
+}
+
+.input-with-button-input-wrapper {
+    --padding-right: 14px;
+
+    width: calc(100% - var(--padding-right));
+    height: 63px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 9fr 1fr ;
+    border-radius: 10px;
+    align-items: center;
+    padding-right: var(--padding-right);
+
+}
+
+.input-with-button-input {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    text-indent: 12px;
+    font-size: 22px;    
+    border: none;
+    outline: none;
+}
+
+.input-with-button-input-error {
+    color: rgb(111, 12, 12);
+}

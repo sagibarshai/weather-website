@@ -1,0 +1,103 @@
+.weather-wrapper{
+    --padding-top: 54px;
+    --padding-bottom: 54px;
+    --padding-right: 54px;
+    --padding-left: 54px;
+
+    width: calc(100vw - var(--padding-left) - var(--padding-right));
+    height: calc(100vh - var(--padding-top) - var(--padding-bottom));
+    background: var(--background-color);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @media screen and (max-width: 1279px) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-row-gap: 24px;
+        height: auto;
+    }
+}
+
+
+.weather-left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 78.11px ;
+}
+
+.weather-left-col-content{
+    --margin-left: 49px;    
+    --margin-right: 109px;    
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    width: calc(100% - var(--margin-right - var(--margin-left)));
+    margin-left: var(--margin-left); /* half of the logo */
+    margin-right: var(--margin-right); 
+
+    @media screen and (max-width: 767px) {
+        margin: 0;
+    }
+
+}
+.weather-left-col-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.weather-left-col-content-text {
+    font-size: 30px;
+    font-weight: 100;
+    width: 271px;
+}
+
+.weather-left-col-footer{
+    font-weight: 100;
+    font-size: 14px;
+    display: flex;
+   flex-direction: column;
+   width: fit-content;
+   
+}
+
+.weather-left-col-line {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+}
+
+
+.weather-right-col {
+    background-color: var(--primary-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.weather-card-content-wrapper {
+    --margin-top:73px;
+    --margin-bottom:73px;
+    --margin-right:117px;
+    --margin-left:117px;
+
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    height: calc(100% - var(--margin-top) - var(--margin-bottom));
+      @media screen and (max-width: 1279px) {
+        height: 514px;
+        width: 80%;
+        margin-top: var(--margin-top);
+        margin-bottom: var(--margin-bottom);
+    }
+    
+}

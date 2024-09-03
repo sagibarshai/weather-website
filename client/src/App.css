@@ -1,0 +1,14 @@
+
+* {
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  margin: 0;
+  --background-color: #F1F1F1;
+  --primary-background: #DDE4E6;
+  --blue-green-text: #A8C6CB;
+
+  /* just for references
+  --mobile-break-point: 767px;
+  --tablet-break-point: 1279px;
+  */
+}
